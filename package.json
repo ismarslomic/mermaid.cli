@@ -1,6 +1,6 @@
 {
   "name": "@ismarslomic/mermaid.cli",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "Command-line interface for mermaid",
   "license": "MIT",
   "repository": "git@github.com:ismarslomic/mermaid.cli.git",
@@ -14,14 +14,14 @@
   },
   "dependencies": {
     "chalk": "^3.0.0",
-    "commander": "^4.1.0",
-    "puppeteer": "^2.0.0"
+    "commander": "^4.1.1",
+    "puppeteer": "^2.1.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "mermaid": "^8.4.4",
+    "mermaid": "^8.4.7",
     "standard": "^14.3.1",
     "yarn-upgrade-all": "^0.5.2"
   },
