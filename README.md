@@ -140,6 +140,7 @@ mmdc -p puppeteer-config.json ...
     yarn run test
 
 ### Git & Npm release
+    // Bump version number in package.json
     git tag <major.minor.patch>
     git push
     git push --tags origin master:HEAD
