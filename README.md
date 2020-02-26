@@ -93,6 +93,7 @@ Usage: mmdc [options]
     -b, --backgroundColor [backgroundColor]         Background color. Example: transparent, red, '#F0F0F0'. Optional. Default: white
     -c, --configFile [configFile]                   JSON configuration file for mermaid. Optional
     -C, --cssFile [cssFile]                         CSS file for the page. Optional
+    -s, --scale [scale]                             Puppeteer scale factor, default 1. Optional
     -p --puppeteerConfigFile [puppeteerConfigFile]  JSON configuration file for puppeteer. Optional
     -h, --help                                      output usage information
 ```
@@ -132,11 +133,14 @@ mmdc -p puppeteer-config.json ...
 ## For contributors
 
 ### Setup
-
     yarn install
     source copy_modules.sh
 
-
 ### Test
+    yarn run test
 
-Use the fixtures in `test/` to do manual testing after you change something.
+### Git & Npm release
+    git tag <major.minor.patch>
+    git push
+    git push --tags origin master:HEAD
+    npm publish --access public
